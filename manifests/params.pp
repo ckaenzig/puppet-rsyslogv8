@@ -234,6 +234,7 @@ class rsyslogv8::params {
           $_os_family_manage_repo          = true
           $_os_family_repo_data            = {
             'baseurl'        => "http://rpms.adiscon.com/v8-stable/epel-${::operatingsystemmajrelease}/\$basearch",
+            'descr'          => 'Rsyslog v8 repository',
             'failovermethod' => 'priority',
             'priority'       => '99',
             'enabled'        => '1',
